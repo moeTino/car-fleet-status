@@ -1,0 +1,31 @@
+
+	<!-- rs1 -->
+	<div class="wrap-input100 validate-input" data-validate = "Name is required">
+		<!--<input class="input100" type="text" name="name" placeholder="Name">-->
+		<select class="input100" (change)="onChange($event.target.value)">
+			<option value="">Filter by Status</option>
+			<option id="on" value="true">ON</option>
+			<option id="off" value="false">OFF</option>
+		</select>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100">
+		<input class="input100" type="text" name="owner" placeholder="Filter by Owner" (keyup)="onKey($event.target.value)">
+		<span class="focus-input100"></span>
+	</div>
+
+	<!--
+	<div class="wrap-input100 validate-input" data-validate = "Message is required">
+		<textarea class="input100" name="message" placeholder="Write Us A Message"></textarea>
+		<span class="focus-input100"></span>
+	</div>
+	-->
+
+	<!--
+	<div class="container-contact100-form-btn">
+		<button class="contact100-form-btn">
+			Search
+		</button>
+	</div>
+	-->	
